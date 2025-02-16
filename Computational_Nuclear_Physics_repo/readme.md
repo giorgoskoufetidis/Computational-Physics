@@ -1,9 +1,5 @@
 # Energy-Length Calculation with Constant E
 
-## Author
-
-Giorgos Koufetidis
-
 ## Description
 
 This script calculates energy (E), length (L), and potential (V0) using randomized inputs for V0 and L, while treating E as a constant. It performs error analysis, linear regression, and visualization to explore the relationship between potential and length.
@@ -11,7 +7,7 @@ This script calculates energy (E), length (L), and potential (V0) using randomiz
 ## Features
 
 - Generates random values for potential (V0) and length (L).
-- Computes the root \( \xi_1 \) using the bisection method.
+- Computes the root \( \  xi_1 \) using the bisection method.
 - Calculates energy error percentage.
 - Determines wavefunction coefficients (A and B).
 - Performs linear regression on V0 and L.
