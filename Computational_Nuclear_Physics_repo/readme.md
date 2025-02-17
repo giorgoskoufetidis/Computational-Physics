@@ -107,14 +107,13 @@ where:
 
 $$
 \delta(A, Z) =
-\begin{equation}
-\begin{aligned}
-   &+ a_p A^{-3/4}, && \text{if } Z \text{ and } N \text{ are both even} \ (\text{even-even nucleus}) \\
-   &0, && \text{if } A \text{ is odd} \ (\text{odd mass nucleus}) \\
-   &- a_p A^{-3/4}, && \text{if } Z \text{ and } N \text{ are both odd} \ (\text{odd-odd nucleus})
-\end{aligned}
-\end{equation}
+\begin{cases} 
+   + a_p A^{-3/4}, & \quad \text{if } Z \text{ and } N \text{ are both even} \quad (\text{even-even nucleus}) \\ 
+   0, & \quad \text{if } A \text{ is odd} \quad (\text{odd mass nucleus}) \\ 
+   - a_p A^{-3/4}, & \quad \text{if } Z \text{ and } N \text{ are both odd} \quad (\text{odd-odd nucleus}) 
+\end{cases}
 $$
+
 
 where $N = A - Z$ is the neutron number.
 
