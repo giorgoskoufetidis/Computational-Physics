@@ -106,12 +106,14 @@ where:
 - $\delta(A, Z)$ is the **pairing term**, defined as:
 
 $$
+
 \delta(A, Z) =
 \begin{cases} 
 + a_p A^{-3/4}, & \text{if } Z \text{ and } N \text{ are both even} \ (\text{even-even nucleus}) \\
 0, & \text{if } A \text{ is odd} \ (\text{odd mass nucleus}) \\
 - a_p A^{-3/4}, & \text{if } Z \text{ and } N \text{ are both odd} \ (\text{odd-odd nucleus})
 \end{cases}
+
 $$
 
 where $N = A - Z$ is the neutron number.
