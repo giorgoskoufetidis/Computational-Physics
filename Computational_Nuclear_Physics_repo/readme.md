@@ -107,11 +107,12 @@ where:
 
 $$
 \delta(A, Z) = \begin{cases}
-    + a_p A^{-3/4} & \text{if } Z \text{ and } N \text{ are both even} \\ % & is your "\tab"-like command (it's a tab alignment character)
-    0 & \text{if } A \text{ is odd} \\ % & is your "\tab"-like command (it's a tab alignment character)
+    + a_p A^{-3/4} & \text{if } Z \text{ and } N \text{ are both even} \\  
+    0 & \text{if } A \text{ is odd} \\  
     - a_p A^{-3/4} & \text{if } Z \text{ and } N \text{ are both odd.}
 \end{cases}
 $$
+
 
 
 
