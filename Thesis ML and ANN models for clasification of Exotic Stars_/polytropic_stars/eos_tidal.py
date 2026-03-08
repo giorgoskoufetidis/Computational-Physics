@@ -7,16 +7,12 @@ import os
 from itertools import product
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from CRUST import CRUST
-
+import sympy as sp
+from sympy.utilities.lambdify import lambdify
 # Constants
 r_sat = 2.7e14  # g/cm^3
 c = 2.998e8  # m/s
 MeV_to_J = 1.60218e-13  # 1 MeV in Joules
-
-
-
-import sympy as sp
-from sympy.utilities.lambdify import lambdify
 
 class CRUST_Differential:
 
@@ -70,8 +66,6 @@ class CRUST_Differential:
         else:
             raise ValueError("Pressure out of bounds")
 
-
-
 # Conversion function
 def conv_to_MeV(value):
     result = value * 1e3  # to kg/m^3
@@ -79,8 +73,6 @@ def conv_to_MeV(value):
     result = result / MeV_to_J  # to MeV/m^3
     result = result * 1e-45  # to MeV/fm^3
     return result
-
-
 # HLPS_2 function
 def HLPS_2(P):
     return 172.858 * (1 - np.exp(-P / 22.8644)) + 2777.75 * (1 - np.exp(-P / 1909.97)) + 161.553
@@ -230,15 +222,13 @@ def tov_rhs(r, z, eos_object):
             return [0, 0, 0]
 
     F =  (1-1.474 * 11.2 * ( 10 **(-6)) * (r** 2) * (epsilon - P)) * ((1-2.948 * M / r) ** (-1))
-    # Assuming math module is imported and variables M, r, P, e, dd are defined
     J = 1.474 * 11.2 * (10**(-6)) * (r**2) * (5 * epsilon + 9 * P + (epsilon + P) / (1 / dP_de)) *  ((1-2.948 * M / r) **(-1)) - 6 * \
     ((1-2.948 * M / r) ** (-1)) - 4 * ((1.474 ** 2) * (M ** 2)/(r ** 2)) *  ((1 + 11.2 *  (10 **(-6)) * (r** 3) * (P / M)) ** 2) * ((1-2.948 * M / r) ** (-2))
-    # epsilon = eos_object.get_energy_from_pressure(P)
     dM_dr = 11.2e-6 * r ** 2 * epsilon
     dP_dr = -1.474 * (epsilon * M / r ** 2) * (1 + P / epsilon) * (1 + 11.2e-6 * r ** 3 * P / M) * (1 - 2.948 * M / r) ** (-1)
     dyrdt = (-y * y - y * F - J) / r
     return [dM_dr, dP_dr, dyrdt]
-# Stopping event
+
 def compute_k2(beta, yR):
     k2 = (8 *(beta ** 5)/5) * ((1-2 * beta)** 2) * (2-yR +2 * beta * (yR - 1)) * (2 *
      beta * (6-3 * yR +3 * beta *  (5 * yR -8))+ 4 * beta ** 3 * (13-11 * yR + beta * (3 *
