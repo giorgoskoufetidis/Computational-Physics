@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+outputs/*
+!outputs/.gitkeep
+
+# Optional if saved models are too large:
+# saved_models/*.pth
