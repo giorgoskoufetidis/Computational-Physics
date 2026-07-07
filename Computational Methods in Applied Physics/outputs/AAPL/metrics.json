@@ -1,0 +1,47 @@
+{
+    "ticker": "AAPL",
+    "best_model_type": "CNN_LSTM",
+    "max_horizon_days": 1260,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.4049263168012658,
+            "mean_rmse_log_return": 0.42087979367902767,
+            "mean_directional_accuracy": 2.48015873015873e-05,
+            "mean_correlation": 0.0,
+            "mean_r2": -23.1074233737605
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.24627773922485727,
+            "mean_rmse_log_return": 0.2642285562540231,
+            "mean_directional_accuracy": 0.9776661706349207,
+            "mean_correlation": 2.076706372120249e-18,
+            "mean_r2": -7.9015077727510565
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 1.2342637777328491,
+            "mean_rmse_log_return": 1.3216261863708496,
+            "mean_directional_accuracy": 0.9757378472222222,
+            "mean_correlation": -0.35800867026729855,
+            "mean_r2": -232.7976154422003
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.34466421604156494,
+            "mean_rmse_log_return": 0.3613587021827698,
+            "mean_directional_accuracy": 0.9713293650793651,
+            "mean_correlation": 0.10862921378328279,
+            "mean_r2": -16.779433069484575
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.1593310832977295,
+            "mean_rmse_log_return": 0.1765652596950531,
+            "mean_directional_accuracy": 0.9727988591269842,
+            "mean_correlation": 0.5479640751348954,
+            "mean_r2": -3.236548851879816
+        }
+    },
+    "milestone_plot": "outputs\\AAPL\\plots\\AAPL_forecast_from_20200218_to_20241217_daily_path.png",
+    "forecast_csv": "outputs\\AAPL\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\AAPL\\backtest_predictions_milestones.csv"
+}

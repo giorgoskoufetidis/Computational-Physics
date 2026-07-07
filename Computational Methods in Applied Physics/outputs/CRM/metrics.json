@@ -1,0 +1,47 @@
+{
+    "ticker": "CRM",
+    "best_model_type": "CNN_LSTM",
+    "max_horizon_days": 1260,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.18816906880114517,
+            "mean_rmse_log_return": 0.2039601138288129,
+            "mean_directional_accuracy": 9.448223733938019e-05,
+            "mean_correlation": 0.0,
+            "mean_r2": -9.47137121286667
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.41475638875926346,
+            "mean_rmse_log_return": 0.4239132333362069,
+            "mean_directional_accuracy": 0.5993197278911564,
+            "mean_correlation": 2.6778824028235653e-18,
+            "mean_r2": -43.57530181334426
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 0.19707590341567993,
+            "mean_rmse_log_return": 0.2130526304244995,
+            "mean_directional_accuracy": 0.5955215419501133,
+            "mean_correlation": -0.47748404968758307,
+            "mean_r2": -11.080049943261676
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.21480408310890198,
+            "mean_rmse_log_return": 0.22913266718387604,
+            "mean_directional_accuracy": 0.5597505668934241,
+            "mean_correlation": 0.13930989367728336,
+            "mean_r2": -13.003966529265282
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.17309090495109558,
+            "mean_rmse_log_return": 0.18886135518550873,
+            "mean_directional_accuracy": 0.56218820861678,
+            "mean_correlation": 0.29832846329952917,
+            "mean_r2": -7.882558120432354
+        }
+    },
+    "milestone_plot": "outputs\\CRM\\plots\\CRM_forecast_from_20210122_to_20251121_daily_path.png",
+    "forecast_csv": "outputs\\CRM\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\CRM\\backtest_predictions_milestones.csv"
+}

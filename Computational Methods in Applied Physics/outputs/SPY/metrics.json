@@ -1,0 +1,47 @@
+{
+    "ticker": "SPY",
+    "best_model_type": "CNN",
+    "max_horizon_days": 1260,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.3000243830518067,
+            "mean_rmse_log_return": 0.30594916835192804,
+            "mean_directional_accuracy": 6.200396825396825e-06,
+            "mean_correlation": 0.0,
+            "mean_r2": -88.52295483805058
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.09315129825702329,
+            "mean_rmse_log_return": 0.10238931487529533,
+            "mean_directional_accuracy": 0.9900793650793651,
+            "mean_correlation": 2.2306773918492755e-17,
+            "mean_r2": -7.565539876072735
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 0.09057309478521347,
+            "mean_rmse_log_return": 0.09949447214603424,
+            "mean_directional_accuracy": 0.9899429563492064,
+            "mean_correlation": 0.2760466099710773,
+            "mean_r2": -6.443353715538978
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.12780314683914185,
+            "mean_rmse_log_return": 0.13645341992378235,
+            "mean_directional_accuracy": 0.9891989087301587,
+            "mean_correlation": 0.33160106142373813,
+            "mean_r2": -14.006378536139216
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.108111672103405,
+            "mean_rmse_log_return": 0.11631116271018982,
+            "mean_directional_accuracy": 0.9806671626984127,
+            "mean_correlation": 0.3093046128927711,
+            "mean_r2": -9.402421093223587
+        }
+    },
+    "milestone_plot": "outputs\\SPY\\plots\\SPY_forecast_from_20200219_to_20241218_daily_path.png",
+    "forecast_csv": "outputs\\SPY\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\SPY\\backtest_predictions_milestones.csv"
+}

@@ -1,0 +1,47 @@
+{
+    "ticker": "META",
+    "best_model_type": "CNN",
+    "max_horizon_days": 126,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.22983424120007562,
+            "mean_rmse_log_return": 0.24928911646952612,
+            "mean_directional_accuracy": 0.0,
+            "mean_correlation": 0.0,
+            "mean_r2": -5.289923716556385
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.2645191604667978,
+            "mean_rmse_log_return": 0.2830507002165816,
+            "mean_directional_accuracy": 0.10010240655401946,
+            "mean_correlation": 2.3808048009617903e-17,
+            "mean_r2": -7.240179448271421
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 0.2501468062400818,
+            "mean_rmse_log_return": 0.26916781067848206,
+            "mean_directional_accuracy": 0.15719406041986686,
+            "mean_correlation": -0.08320826794761428,
+            "mean_r2": -6.434513917044987
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.2537122964859009,
+            "mean_rmse_log_return": 0.27254438400268555,
+            "mean_directional_accuracy": 0.10906298003072197,
+            "mean_correlation": 0.04542416669323875,
+            "mean_r2": -6.605562917769901
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.2609401047229767,
+            "mean_rmse_log_return": 0.2794991135597229,
+            "mean_directional_accuracy": 0.1045826932923707,
+            "mean_correlation": 0.03006037462063515,
+            "mean_r2": -7.0297905868954125
+        }
+    },
+    "milestone_plot": "outputs\\META\\plots\\META_forecast_from_20220202_to_20220728_daily_path.png",
+    "forecast_csv": "outputs\\META\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\META\\backtest_predictions_milestones.csv"
+}

@@ -1,0 +1,47 @@
+{
+    "ticker": "NVDA",
+    "best_model_type": "CNN_LSTM",
+    "max_horizon_days": 126,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.310259982083092,
+            "mean_rmse_log_return": 0.354958709647793,
+            "mean_directional_accuracy": 7.487271638215033e-05,
+            "mean_correlation": 0.0,
+            "mean_r2": -3.4245429276184756
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.23103693429233213,
+            "mean_rmse_log_return": 0.27241236499753807,
+            "mean_directional_accuracy": 0.8492812219227314,
+            "mean_correlation": 1.6239135430398524e-17,
+            "mean_r2": -1.5326418031195443
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 0.26658952236175537,
+            "mean_rmse_log_return": 0.31071075797080994,
+            "mean_directional_accuracy": 0.8441898772087453,
+            "mean_correlation": -0.05138660288248717,
+            "mean_r2": -2.39211205357597
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.2560468018054962,
+            "mean_rmse_log_return": 0.3007284104824066,
+            "mean_directional_accuracy": 0.8457622042527704,
+            "mean_correlation": -0.17914378975589149,
+            "mean_r2": -2.117243657036433
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.25250139832496643,
+            "mean_rmse_log_return": 0.2968176603317261,
+            "mean_directional_accuracy": 0.8474842767295598,
+            "mean_correlation": 0.06445059868389875,
+            "mean_r2": -2.038942808196658
+        }
+    },
+    "milestone_plot": "outputs\\NVDA\\plots\\NVDA_forecast_from_20230524_to_20231116_daily_path.png",
+    "forecast_csv": "outputs\\NVDA\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\NVDA\\backtest_predictions_milestones.csv"
+}

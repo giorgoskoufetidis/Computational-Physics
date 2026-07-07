@@ -1,0 +1,47 @@
+{
+    "ticker": "MSFT",
+    "best_model_type": "CNN",
+    "max_horizon_days": 1260,
+    "baseline_summary": {
+        "Zero Return Baseline": {
+            "mean_mae_log_return": 0.3700546446344491,
+            "mean_rmse_log_return": 0.3805541429331615,
+            "mean_directional_accuracy": 4.789272030651341e-05,
+            "mean_correlation": 0.0,
+            "mean_r2": -48.89542766218093
+        },
+        "Mean Return Baseline": {
+            "mean_mae_log_return": 0.27707960657343184,
+            "mean_rmse_log_return": 0.2877500253689081,
+            "mean_directional_accuracy": 0.9381636562671045,
+            "mean_correlation": -1.543716800930975e-17,
+            "mean_r2": -18.515338660782525
+        }
+    },
+    "neural_summary": {
+        "CNN": {
+            "mean_mae_log_return": 0.11453845351934433,
+            "mean_rmse_log_return": 0.1324801743030548,
+            "mean_directional_accuracy": 0.9379584017515051,
+            "mean_correlation": -0.05930917900416765,
+            "mean_r2": -3.1050618524589235
+        },
+        "TDNN": {
+            "mean_mae_log_return": 0.24951937794685364,
+            "mean_rmse_log_return": 0.26235347986221313,
+            "mean_directional_accuracy": 0.9379584017515051,
+            "mean_correlation": 0.01728376575598547,
+            "mean_r2": -20.297380116487307
+        },
+        "CNN_LSTM": {
+            "mean_mae_log_return": 0.14386583864688873,
+            "mean_rmse_log_return": 0.15608850121498108,
+            "mean_directional_accuracy": 0.9379584017515051,
+            "mean_correlation": 0.4315903883569575,
+            "mean_r2": -6.3922215675550795
+        }
+    },
+    "milestone_plot": "outputs\\MSFT\\plots\\MSFT_daily_forecast_path_from_training_end.png",
+    "forecast_csv": "outputs\\MSFT\\daily_forecast_path_from_training_end.csv",
+    "milestone_backtest_csv": "outputs\\MSFT\\backtest_predictions_milestones.csv"
+}

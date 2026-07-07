@@ -8,7 +8,7 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 
-outputs/*
+
 !outputs/.gitkeep
 
 # Optional if saved models are too large:
